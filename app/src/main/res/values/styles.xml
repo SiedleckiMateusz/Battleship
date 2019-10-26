@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="przyciskMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/click_button</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="pole_planszy_do_grania">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/ic_pusty_kwadrat</item>
+        <item name="android:onClick">onClickRuchGracza</item>
+    </style>
+
+    <style name="pole_planszy_do_grania_samemu">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/ic_pusty_kwadrat</item>
+        <item name="android:onClick">onClickKwadracik</item>
+    </style>
+
+    <style name="pole_malej_planszy_podglad">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:background">@drawable/ic_pusty_kwadrat</item>
+    </style>
+
+    <style name="maly_kwadrat_dla_liczby_podglad">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/kwadrat_dla_numerkow_podglad</item>
+        <item name="android:textSize">7sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="podgladStatkow">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">@drawable/wybor_gracza_pudlo</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="kwadrat_dla_numerka">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/kwadrat_dla_numerkow</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="text_view_statystyki">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

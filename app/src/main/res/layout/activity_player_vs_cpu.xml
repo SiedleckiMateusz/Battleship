@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerVsCpuActivity"
+    android:layout_margin="3dp"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/llWynik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="start">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvNazwaZawodnika"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="You"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/tvPunktyZawodnika"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>    <!--NAZWA I PUNKTY GRACZA -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <!--statek 41-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza41_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza41_2"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza41_3"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza41_4"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+                <!--statek 32-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza32_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza32_2"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza32_3"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+                <!--statek 31-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza31_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza31_2"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza31_3"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+                <!--statek 21-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza21_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza21_2"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+                <!--statek 22-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza22_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza22_2"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+                <!--statek 23-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza23_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekGracza23_2"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+                <!--statek 11-->
+                <TextView
+                    android:id="@+id/tvStatekGracza11"
+                    style="@style/podgladStatkow" />
+                <!--statek 12-->
+                <TextView
+                    android:id="@+id/tvStatekGracza12"
+                    style="@style/podgladStatkow" />
+                <!--statek 13-->
+                <TextView
+                    android:id="@+id/tvStatekGracza13"
+                    style="@style/podgladStatkow" />
+                <!--statek 14-->
+                <TextView
+                    android:id="@+id/tvStatekGracza14"
+                    style="@style/podgladStatkow" />
+
+
+
+
+            </LinearLayout>   <!--FLOTA GRACZA -->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="end">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvPunktyCpu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mr. Always Ready"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="end"/>
+            </LinearLayout>  <!--NAZWA I PUNKTY CPU -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <!--statek 11-->
+                <TextView
+                    android:id="@+id/tvStatekCpu11"
+                    style="@style/podgladStatkow" />
+                <!--statek 12-->
+                <TextView
+                    android:id="@+id/tvStatekCpu12"
+                    style="@style/podgladStatkow" />
+                <!--statek 13-->
+                <TextView
+                    android:id="@+id/tvStatekCpu13"
+                    style="@style/podgladStatkow" />
+                <!--statek 14-->
+                <TextView
+                    android:id="@+id/tvStatekCpu14"
+                    style="@style/podgladStatkow" />
+                <!--statek 21-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu21_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu21_2"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+                <!--statek 22-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu22_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu22_2"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+                <!--statek 23-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu23_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu23_2"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+                <!--statek 31-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu31_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu31_2"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu31_3"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+                <!--statek 32-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu32_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu32_2"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu32_3"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+                <!--statek 4-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu41_1"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu41_2"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu41_3"
+                        style="@style/podgladStatkow" />
+
+                    <TextView
+                        android:id="@+id/tvStatekCpu41_4"
+                        style="@style/podgladStatkow" />
+                </LinearLayout>
+            </LinearLayout>  <!--FLOTA CPU -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Podglad Twoich statków"
+            android:textColor="@android:color/black"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="A"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="B"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="C"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="D"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="E"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="F"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="G"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="H"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="I"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="J"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPlanszaPodglad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="1"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="2"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="3"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="4"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="5"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="6"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="7"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="8"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="9"/>
+                    <TextView
+                        style="@style/maly_kwadrat_dla_liczby_podglad"
+                        android:text="10"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvPodgladW1K1"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW1K2"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW1K3"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW1K4"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW1K5"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW1K6"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW1K7"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW1K8"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW1K9"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW1K10"
+                        style="@style/pole_malej_planszy_podglad"/>
+                </LinearLayout><!--WIERSZ 1  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvPodgladW2K1"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW2K2"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW2K3"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW2K4"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW2K5"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW2K6"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW2K7"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW2K8"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW2K9"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW2K10"
+                        style="@style/pole_malej_planszy_podglad"/>
+                </LinearLayout><!--WIERSZ 2  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvPodgladW3K1"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW3K2"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW3K3"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW3K4"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW3K5"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW3K6"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW3K7"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW3K8"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW3K9"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW3K10"
+                        style="@style/pole_malej_planszy_podglad"/>
+                </LinearLayout><!--WIERSZ 3  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvPodgladW4K1"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW4K2"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW4K3"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW4K4"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW4K5"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW4K6"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW4K7"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW4K8"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW4K9"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW4K10"
+                        style="@style/pole_malej_planszy_podglad"/>
+                </LinearLayout><!--WIERSZ 4  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvPodgladW5K1"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW5K2"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW5K3"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW5K4"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW5K5"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW5K6"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW5K7"
+                        style="@style/pole_malej_planszy_podglad"
+                        tools:ignore="TooManyViews" />
+                    <Button
+                        android:id="@+id/tvPodgladW5K8"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW5K9"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW5K10"
+                        style="@style/pole_malej_planszy_podglad"/>
+                </LinearLayout><!--WIERSZ 5  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvPodgladW6K1"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW6K2"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW6K3"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW6K4"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW6K5"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW6K6"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW6K7"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW6K8"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW6K9"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW6K10"
+                        style="@style/pole_malej_planszy_podglad"/>
+                </LinearLayout><!--WIERSZ 6  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvPodgladW7K1"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW7K2"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW7K3"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW7K4"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW7K5"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW7K6"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW7K7"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW7K8"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW7K9"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW7K10"
+                        style="@style/pole_malej_planszy_podglad"/>
+                </LinearLayout><!--WIERSZ 7  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvPodgladW8K1"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW8K2"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW8K3"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW8K4"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW8K5"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW8K6"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW8K7"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW8K8"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW8K9"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW8K10"
+                        style="@style/pole_malej_planszy_podglad"/>
+                </LinearLayout><!--WIERSZ 8  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvPodgladW9K1"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW9K2"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW9K3"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW9K4"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW9K5"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW9K6"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW9K7"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW9K8"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW9K9"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW9K10"
+                        style="@style/pole_malej_planszy_podglad"/>
+                </LinearLayout><!--WIERSZ 9  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvPodgladW10K1"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW10K2"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW10K3"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW10K4"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW10K5"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW10K6"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW10K7"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW10K8"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW10K9"
+                        style="@style/pole_malej_planszy_podglad"/>
+                    <Button
+                        android:id="@+id/tvPodgladW10K10"
+                        style="@style/pole_malej_planszy_podglad"/>
+                </LinearLayout><!--WIERSZ 10  -->
+            </LinearLayout>
+        </LinearLayout> <!-- PLANSZA DLA CPU -->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llPlanszaDoStrzelania"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/llNumerkiWiersza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="A"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="B"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="C"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="D"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="E"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="F"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="G"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="H"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="I"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="J"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPlansza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/llNumerkiKolumny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="1"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="2"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="3"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="4"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="5"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="6"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="7"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="8"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="9"/>
+                    <TextView
+                        style="@style/kwadrat_dla_numerka"
+                        android:text="10"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llWiersz1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvW1K1"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW1K2"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW1K3"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW1K4"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW1K5"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW1K6"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW1K7"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW1K8"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW1K9"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW1K10"
+                        style="@style/pole_planszy_do_grania"/>
+                </LinearLayout><!--WIERSZ 1  -->
+                <LinearLayout
+                    android:id="@+id/llWiersz2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvW2K1"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW2K2"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW2K3"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW2K4"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW2K5"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW2K6"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW2K7"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW2K8"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW2K9"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW2K10"
+                        style="@style/pole_planszy_do_grania"/>
+                </LinearLayout><!--WIERSZ 2  -->
+                <LinearLayout
+                    android:id="@+id/llWiersz3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvW3K1"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW3K2"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW3K3"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW3K4"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW3K5"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW3K6"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW3K7"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW3K8"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW3K9"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW3K10"
+                        style="@style/pole_planszy_do_grania"/>
+                </LinearLayout><!--WIERSZ 3  -->
+                <LinearLayout
+                    android:id="@+id/llWiersz4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvW4K1"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW4K2"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW4K3"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW4K4"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW4K5"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW4K6"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW4K7"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW4K8"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW4K9"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW4K10"
+                        style="@style/pole_planszy_do_grania"/>
+                </LinearLayout><!--WIERSZ 4  -->
+                <LinearLayout
+                    android:id="@+id/llWiersz5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvW5K1"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW5K2"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW5K3"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW5K4"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW5K5"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW5K6"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW5K7"
+                        style="@style/pole_planszy_do_grania"
+                        tools:ignore="TooManyViews" />
+                    <Button
+                        android:id="@+id/tvW5K8"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW5K9"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW5K10"
+                        style="@style/pole_planszy_do_grania"/>
+                </LinearLayout><!--WIERSZ 5  -->
+                <LinearLayout
+                    android:id="@+id/llWiersz6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvW6K1"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW6K2"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW6K3"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW6K4"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW6K5"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW6K6"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW6K7"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW6K8"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW6K9"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW6K10"
+                        style="@style/pole_planszy_do_grania"/>
+                </LinearLayout><!--WIERSZ 6  -->
+                <LinearLayout
+                    android:id="@+id/llWiersz7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvW7K1"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW7K2"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW7K3"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW7K4"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW7K5"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW7K6"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW7K7"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW7K8"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW7K9"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW7K10"
+                        style="@style/pole_planszy_do_grania"/>
+                </LinearLayout><!--WIERSZ 7  -->
+                <LinearLayout
+                    android:id="@+id/llWiersz8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvW8K1"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW8K2"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW8K3"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW8K4"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW8K5"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW8K6"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW8K7"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW8K8"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW8K9"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW8K10"
+                        style="@style/pole_planszy_do_grania"/>
+                </LinearLayout><!--WIERSZ 8  -->
+                <LinearLayout
+                    android:id="@+id/llWiersz9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvW9K1"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW9K2"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW9K3"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW9K4"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW9K5"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW9K6"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW9K7"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW9K8"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW9K9"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW9K10"
+                        style="@style/pole_planszy_do_grania"/>
+                </LinearLayout><!--WIERSZ 9  -->
+                <LinearLayout
+                    android:id="@+id/llWiersz10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tvW10K1"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW10K2"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW10K3"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW10K4"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW10K5"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW10K6"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW10K7"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW10K8"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW10K9"
+                        style="@style/pole_planszy_do_grania"/>
+                    <Button
+                        android:id="@+id/tvW10K10"
+                        style="@style/pole_planszy_do_grania"/>
+                </LinearLayout><!--WIERSZ 10  -->
+            </LinearLayout>
+        </LinearLayout> <!-- PLANSZA DLA GRACZA -->
+        <TextView
+            android:id="@+id/tvCzyjruch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:text="Twój ruch"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvKomentarz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:text="Komentarz"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/llMenuPrzedRozgrywka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/przyciskMenu"
+            android:text="losuj statki"
+            android:onClick="onClickLosujStatki"/>
+
+        <Button
+            style="@style/przyciskMenu"
+            android:text="Zmien Imię"
+            android:onClick="onClickZmienImie"/>
+
+        <Button
+            style="@style/przyciskMenu"
+            android:text="Rozpocznij rozgrywkę!!!"
+            android:onClick="onClickRozpocznijGre"/>
+    </LinearLayout>
+
+</LinearLayout>

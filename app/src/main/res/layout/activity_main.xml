@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+    <Button
+        style="@style/przyciskMenu"
+        android:text="single player"
+        android:onClick="onClickSinglePlayer"/>
+
+    <Button
+        style="@style/przyciskMenu"
+        android:text="gracz vs cpu"
+        android:onClick="onClickPlayerVsCpu"/>
+
+    <Button
+        style="@style/przyciskMenu"
+        android:text="zasady gry"
+        android:onClick="onClickGameRules"/>
+
+</LinearLayout>
