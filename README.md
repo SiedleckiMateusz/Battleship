@@ -5,6 +5,7 @@ This is my first game for Android. If you want to use it download repository and
 ---
 
 You can use only logic part. The logic this game is in a file: BattleshipGame.java
+
 Boot logic is in files: BootLogic.java,  Direction.java
 
 ---
